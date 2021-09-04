@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>To Do</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script defer src="main.js"></script>
+  <script>
+    let plans = [{
+      name: 'Покушать',
+      done: true,
+    }, {
+      name: 'Поковырять в носу',
+      done: true,
+    }, {
+      name: 'Игры с котом',
+      done: true,
+    }];
+
+    document.addEventListener('DOMContentLoaded', function () {
+      createTodoApp(document.getElementById('todo-app'), 'Мои дела', plans);
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container mb-5">
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Мои дела</a>
+      <a class="nav-link" href="mom.html">Дела мамы</a>
+      <a class="nav-link" href="dad.html">Дела папы</a>
+    </nav>
+  </div>
+  <div id="todo-app" class="container"></div>
+</body>
+
+</html>
